@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Nightfall — Privacy Policy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  body { font-family: -apple-system, system-ui, sans-serif; max-width: 640px; margin: 60px auto; padding: 0 20px; line-height: 1.6; color: #1a1a1a; }
+  h1 { font-size: 26px; }
+  h2 { font-size: 18px; margin-top: 32px; }
+  .updated { color: #666; font-size: 14px; }
+</style>
+</head>
+<body>
+  <h1>Privacy policy — Nightfall (Dark Mode Toggle)</h1>
+  <p class="updated">Last updated: [fill in the date you publish this]</p>
+
+  <h2>Summary</h2>
+  <p>Nightfall does not collect, transmit, sell, or share any user data. It has no server, no analytics, and no account system.</p>
+
+  <h2>What Nightfall stores, and where</h2>
+  <p>Nightfall saves one thing: a list of website hostnames you've turned dark mode on for (e.g. "news.example.com": true). This is stored using Chrome's built-in <code>chrome.storage.sync</code> API, which lives inside your own Google account's Chrome sync storage — the same mechanism Chrome uses to sync your bookmarks or settings. This data:</p>
+  <ul>
+    <li>Never leaves your browser / Google account sync storage</li>
+    <li>Is never sent to any server operated by us, because we don't operate one</li>
+    <li>Is not sold, shared, or used for advertising</li>
+    <li>Contains no browsing history, page content, personal information, or identifiers beyond the hostnames you've toggled</li>
+  </ul>
+
+  <h2>What Nightfall reads from pages</h2>
+  <p>The content script reads only the current page's hostname (e.g. "example.com" from the address bar) to look up your saved preference. It does not read, log, or transmit page content, form data, or browsing activity.</p>
+
+  <h2>Permissions</h2>
+  <p><strong>storage</strong> — to save your per-site preference locally.<br />
+  <strong>Host access to all sites</strong> — required so the dark-mode filter can be applied to whichever site you're currently viewing, since you can choose to enable it on any site.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the updated version will be posted at this same URL with a new "last updated" date.</p>
+
+  <h2>Contact</h2>
+  <p>[Add your email or support link here]</p>
+</body>
+</html>
