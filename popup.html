@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Nightfall</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <span class="wordmark">Nightfall</span>
+      <span class="tag">dark mode</span>
+    </div>
+
+    <div class="switch-row">
+      <button id="toggle" class="sky" role="switch" aria-checked="false" aria-label="Toggle dark mode for this site">
+        <span class="stars"></span>
+        <span class="orb"></span>
+      </button>
+      <div class="status">
+        <span id="statusLabel">Off</span> for this site
+      </div>
+    </div>
+
+    <div class="site-readout">
+      <span class="dot" id="siteDot"></span>
+      <span id="hostname">loading…</span>
+    </div>
+
+    <button id="resetAll" class="link-btn">Turn off on all sites</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
